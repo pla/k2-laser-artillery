@@ -1,0 +1,14 @@
+{
+  "name": "k2-laser-artillery",
+  "version": "2.0.0",
+  "factorio_version": "2.0",
+  "title": "k2 Laser Artillery",
+  "author": "Aeryn",
+  "contact": "",
+  "homepage": "",
+  "dependencies": [
+    "base >= 2.0.0",
+    "!Krastorio2"
+  ],
+  "description": "Adds the Laser Artillery from Krastorio 2. All credit goes to K2 authours Krastor and Linver and the current maintainer Raiguard."
+}
