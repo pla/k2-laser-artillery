@@ -8,7 +8,7 @@
   "homepage": "",
   "dependencies": [
     "base >= 2.0.0",
-    "!Krastorio2"
+    "? Krastorio2"
   ],
   "description": "Adds the Laser Artillery from Krastorio 2. All credit goes to K2 authours Krastor and Linver and the current maintainer Raiguard."
 }

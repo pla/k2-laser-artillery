@@ -5,18 +5,18 @@ require("prototypes/laser-artillery-turret")
 data:extend({
   {
     type = "item",
-    name = "kr-laser-artillery-turret",
+    name = "k2-laser-artillery-turret",
     icon = "__k2-laser-artillery__/graphics/" .. "building-laser-artillery-turret.png",
     icon_size = 64,
     group = "combat",
     subgroup = "gun",
     order = "b[turret]-e[artillery-turret]-a[laser-artillery-turret]",
-    place_result = "kr-laser-artillery-turret",
+    place_result = "k2-laser-artillery-turret",
     stack_size = 10,
   },
   {
     type = "recipe",
-    name = "kr-laser-artillery-turret",
+    name = "k2-laser-artillery-turret",
     enabled = false,
     energy_required = 20,
     ingredients = {
@@ -25,18 +25,18 @@ data:extend({
       { type="item", name = "laser-turret",amount= 25 },
       { type="item", name = "accumulator",amount= 100 },
     },
-    results = {{type="item", name ="kr-laser-artillery-turret",amount=1}}
+    results = {{type="item", name ="k2-laser-artillery-turret",amount=1}}
   },
   {
     type = "technology",
-    name = "kr-laser-artillery-turret",
+    name = "k2-laser-artillery-turret",
     icon = "__k2-laser-artillery__/graphics/" .. "technology-laser-artillery-turret.png",
     icon_size = 256,
     prerequisites = { "artillery" },
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "kr-laser-artillery-turret",
+        recipe = "k2-laser-artillery-turret",
       },
     },
     order = "g-f-z",
@@ -55,7 +55,7 @@ data:extend({
   },
   {
     type = "trivial-smoke",
-    name = "kr-laser-explosion-gunshot-smoke-fast",
+    name = "k2-laser-explosion-gunshot-smoke-fast",
     animation = {
       filename = "__base__/graphics/entity/smoke-fast/smoke-fast.png",
       priority = "high",
@@ -77,7 +77,7 @@ data:extend({
   },
   {
     type = "explosion",
-    name = "kr-laser-explosion-gunshot",
+    name = "k2-laser-explosion-gunshot",
     flags = { "not-on-map" },
     subgroup = "explosions",
     animations = {
@@ -113,13 +113,13 @@ data:extend({
       },
     },
     rotate = true,
-    smoke = "kr-laser-explosion-gunshot-smoke-fast",
+    smoke = "k2-laser-explosion-gunshot-smoke-fast",
     smoke_count = 2,
     smoke_slow_down_factor = 0.25,
   },
   {
     type = "explosion",
-    name = "kr-laser-explosion",
+    name = "k2-laser-explosion",
     icon = "__base__/graphics/item-group/effects.png",
     icon_size = 64,
     flags = { "not-on-map" },
@@ -176,7 +176,7 @@ data:extend({
           --          },
           {
             type = "create-entity",
-            entity_name = "kr-laser-explosion",
+            entity_name = "k2-laser-explosion",
           },
         },
       },

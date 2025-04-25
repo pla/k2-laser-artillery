@@ -50,11 +50,11 @@ end
 data:extend({
   {
     type = "electric-turret",
-    name = "kr-laser-artillery-turret",
+    name = "k2-laser-artillery-turret",
     icon = "__k2-laser-artillery__/graphics/" .. "item-laser-artillery-turret.png",
     icon_size = 64,
     flags = { "placeable-player", "player-creation" },
-    minable = { mining_time = 1, result = "kr-laser-artillery-turret" },
+    minable = { mining_time = 1, result = "k2-laser-artillery-turret" },
     max_health = 1000,
     corpse = "turret-remnant",
     damaged_trigger_effect = hit_effects.entity(),
@@ -70,7 +70,7 @@ data:extend({
         animation = {
           layers = {
             {
-              filename = "__k2-laser-artillery__/graphics/" .. "building-hr-kr-turret-base.png",
+              filename = "__k2-laser-artillery__/graphics/" .. "building-hr-k2-turret-base.png",
               priority = "high",
               width = 440,
               height = 380,
@@ -82,7 +82,7 @@ data:extend({
 
             },
             {
-              filename = "__k2-laser-artillery__/graphics/" .. "building-hr-kr-turret-base-mask.png",
+              filename = "__k2-laser-artillery__/graphics/" .. "building-hr-k2-turret-base-mask.png",
               flags = { "mask", "low-object" },
               line_length = 1,
               width = 440,
@@ -96,7 +96,7 @@ data:extend({
 
             },
             {
-              filename = "__k2-laser-artillery__/graphics/" .. "building-hr-kr-turret-base-shadow.png",
+              filename = "__k2-laser-artillery__/graphics/" .. "building-hr-k2-turret-base-shadow.png",
               line_length = 1,
               width = 440,
               height = 380,
@@ -154,7 +154,7 @@ data:extend({
             max_range = 11 * 32, -- artillery is 7 * 32
             source_effects = {
               type = "create-explosion",
-              entity_name = "kr-laser-explosion-gunshot",
+              entity_name = "k2-laser-explosion-gunshot",
             },
           },
         },
@@ -206,6 +206,6 @@ data:extend({
 
 
 -- Sound fixes if needed
-if settings.startup["kr-fix-laser-artillery-turret"].value == true then
-  data.raw["electric-turret"]["kr-laser-artillery-turret"].starting_attack_sound = nil
+if settings.startup["k2-fix-laser-artillery-turret"].value == true then
+  data.raw["electric-turret"]["k2-laser-artillery-turret"].starting_attack_sound = nil
 end

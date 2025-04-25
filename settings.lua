@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "bool-setting",
-    name = "kr-fix-laser-artillery-turret",
+    name = "k2-fix-laser-artillery-turret",
     setting_type = "startup",
     default_value = false,
     order = "zzz",
